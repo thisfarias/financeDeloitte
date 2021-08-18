@@ -1,0 +1,68 @@
+{%extends "default.html"%}
+
+{%block my_title%}Deloitte - Ações{%endblock%}
+
+{%block my_static%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel='stylesheet' href='static/css/index.css'>
+{%endblock%}
+
+{%block my_body%}
+    <article>
+        <div id='form-search'>
+            <div id='box-header'>
+                <h2>Encontre Ações</h2>
+            </div>
+            <div id='box-body'> 
+                <div id='box-top' class='boxes-body'>
+                    <div id='centralize-top'>
+                        <form action='/stocks' method='GET'>
+                            <div id='box-region' class='inside-centralize-top'>
+                                <div class='text-parameters'>
+                                    <span class='title-parameters'>Região</span>
+                                </div>
+                                <input id='region' name='region' class='value-parameters'>
+                            </div>
+                            <div id='box-driver' class='inside-centralize-top'>
+                                <div class='text-parameters'>
+                                    <span class='title-parameters'>Navegador</span>
+                                </div>
+                                <select class='value-parameters' id='my_option' name='driver'>
+                                    <option value='Chrome' selected="selected">Chrome</option>
+                                    <option value='Firefox'>Firefox</option>
+                                    <option value='Explorer'>Explorer</option>
+                                    <option value='Edge'>Edge</option>
+                                    <option value='Opera'>Opera</option>
+                                </select>
+                            </div>
+                            <button type='submit' id='my_button'>Encontrar</button>
+                        </form>
+                    </div>
+                </div>
+                <div id='box-bottom' class='boxes-body'>
+                    <p id='results'></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--<script>
+        $(document).ready(function(){
+            $('#my_button').on('click', function(){
+                $.ajax({
+                    type:'GET',
+                    url:'/stocks',
+                    data:{
+                        'region':$('#region').val(),
+                        'driver':$('#my_option').val(),
+                    },
+                    success:function(data){
+                        $('#results').html(data);
+                        $('#box-bottom').css("visibility", "visible");
+                    },
+                    dataType:'html'
+                })
+                
+            })
+        })
+    </script>-->
+{%endblock%}

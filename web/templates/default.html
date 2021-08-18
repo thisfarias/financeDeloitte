@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block my_title%}{%endblock%}</title>
+    <link rel='stylesheet' href='static/css/default.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    {%block my_static%}
+
+    {%endblock%}
+</head>
+<body>
+    <header>
+        <nav class='navbar'>
+            <div id='centralize-logo'>
+                <a href='/' id='logo'><img src='https://www2.deloitte.com/content/dam/assets/logos/deloitte-print.png'></a>
+            </div>
+        </nav>
+        <nav class='navbar'>
+            <div id='centralize-options'>
+                <ul>
+                    <li><a href='/'>Inicio</a></li>
+                    <li><a href='/'>Sobre</a></li>
+                    <li><a href='/'>Criador</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        {%block my_body%}{%endblock%}
+    </section>
+</body>
+</html>
