@@ -6,10 +6,10 @@
 
 <h2>Languages (Linguagens)</h2>
 <ul>
-  <li>Python <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/python.png' width='25' height='25' aligjn='center'></li>
-  <li>HTML <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/html.png' width='25' height='25' aligjn='center'></li>
-  <li>CSS <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/css.png' width='25' height='25' aligjn='center'></li>
-  <li>JavaScript <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/js.png' width='25' height='25' aligjn='center'></li>
+  <li>Python <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/python.png' width='25' height='25' align='center'></li>
+  <li>HTML <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/html.png' width='25' height='25' align='center'></li>
+  <li>CSS <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/css.png' width='25' height='25' align='center'></li>
+  <li>JavaScript <img src='https://github.com/thisfarias/financeDeloitte/blob/main/web/static/img/js.png' width='25' height='25' align='center'></li>
 </ul>
 
 <h2>Tools and Librearies (Ferramentas e Bibliotecas)</h2>
